@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform, ActionSheetController } from 'ionic-angular';
+import { Platform, ActionSheetController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-actionsheet',
@@ -9,7 +9,8 @@ export class ActionsheetPage {
 
   constructor(
     public platform: Platform,
-    public actionsheetCtrl: ActionSheetController
+    public actionsheetCtrl: ActionSheetController,
+    public alertCtrl: AlertController
     ) { }
 
   ionViewDidLoad() {
@@ -61,6 +62,38 @@ export class ActionsheetPage {
         ]
       });
       actionSheet.present();
+  }
+
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'New Friend!',
+      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+
+  showPromptAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Album',
+      message : "Enter a name for this new album you're so keen on adding",
+      inputs : [{
+        name:"name",
+        placeholder:"Name"
+      }],
+      buttons: [{
+        text : 'Cancel',
+        handler : data => {
+          console.log('Cancel clicked');
+        }
+      },{
+        text : 'Save',
+        handler : data => {
+          console.log('Save clicked');
+        }
+      }]
+    });
+    alert.present();
   }
 
 }
