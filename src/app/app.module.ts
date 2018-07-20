@@ -10,6 +10,7 @@ import { ActionsheetPage } from "../pages/actionsheet/actionsheet";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CardsPage } from '../pages/cards/cards';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     OfferPage,
-    ActionsheetPage
+    ActionsheetPage,
+    CardsPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     OfferPage,
-    ActionsheetPage
+    ActionsheetPage,
+    CardsPage
   ],
   providers: [
     StatusBar,
