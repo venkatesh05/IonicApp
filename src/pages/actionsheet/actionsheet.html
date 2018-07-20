@@ -1,5 +1,8 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Action Sheets</ion-title>
   </ion-navbar>
 </ion-header>
@@ -14,4 +17,7 @@
   <button ion-button block (click)="showPromptAlert()">
     Show Prompt Alert
   </button>  
+  <button ion-button (click)="confirmAlert()">
+    Show Confirm Alert
+  </button>
 </ion-content>

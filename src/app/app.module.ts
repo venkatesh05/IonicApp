@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { UsersPage } from '../pages/users/users';
 import { UserPage } from '../pages/users/user/user';
 import { OffersService } from '../services/offers';
+import { CardsPage } from '../pages/cards/cards';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OffersService } from '../services/offers';
     OfferPage,
     ActionsheetPage,
     UsersPage,
-    UserPage
+    UserPage,
+    CardsPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { OffersService } from '../services/offers';
     OfferPage,
     ActionsheetPage,
     UsersPage,
-    UserPage
+    UserPage,
+    CardsPage
   ],
   providers: [
     StatusBar,
