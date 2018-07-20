@@ -76,7 +76,7 @@ export class ActionsheetPage {
   showPromptAlert() {
     let alert = this.alertCtrl.create({
       title: 'Album',
-      message : "Enter a name for this new album you're so keen on adding",
+      message : "Enter a name for this new album you're so keep on adding",
       inputs : [{
         name:"name",
         placeholder:"Name"
