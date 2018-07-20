@@ -4,6 +4,14 @@ page-cards {
        padding: 0% !important;
    }
 
+   .title {
+        text-overflow: clip !important;
+    }
    
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
 }

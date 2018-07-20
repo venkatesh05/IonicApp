@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CardsPage {
   moviesList = [{
-    title : "Nine Inch Nails Live",
+    title : "Nine Inch Nails Live dfgdf dgfdg dfg dfg ",
     imagePath : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
   },
   {

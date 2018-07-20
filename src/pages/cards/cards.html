@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Cards</ion-title>
   </ion-navbar>
 
@@ -20,9 +23,7 @@
             <ion-card>
                 <img src="{{movie.imagePath}}"/>
                 <ion-card-content>
-                  <ion-card-title>
-                      {{movie.title}}
-                  </ion-card-title>
+                    <p>{{movie.title}}</p>
                 </ion-card-content>
             </ion-card>
         </ion-col>
